@@ -1,0 +1,162 @@
+:root {
+
+    /*----------Variables----------*/
+
+    /*-----Colors-----*/
+
+    /*Primary*/
+
+    --prymary-cyan: hsl(179, 62%, 43%);
+    --primary-cyan-lighten: rgb(74,190,189);
+    --primary-bright-yellow: hsl(71, 73%, 54%);
+    --primary-lighten-yellow: hsl(71, 60%, 55%);
+
+
+    /*Neutral*/
+
+    --neutral-light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: #fafafa;
+    --very-light-gray: #c6e6e9;
+
+    /*-----Typography-----*/
+
+    --font-size: 1.5rem;
+
+    /*-----Padding & Margin-----*/
+
+    --card-padding: 30px 25px;
+    --blocks-margin: 20px;
+
+
+}
+
+/*-----Global Styles-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--neutral-light-gray);
+}
+
+p {
+    font-size: var(--font-size);
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/*-----Grid-Container-----*/
+
+.grid-container {
+    margin: 75px 35px;
+    box-shadow: 0px 5px 40px #b6b8b8;
+    border-radius: 8px;
+}
+
+/*-----Grid-Cards-----*/
+
+.grid-container__join, .grid-container__subscription, .grid-container__why {
+    padding: var(--card-padding);
+}
+
+/*Grid-Container-Join*/
+
+.grid-container__join {
+    background-color: var(--white);
+    border-radius: 8px 8px 0 0;
+
+}
+
+.grid-container__join--title {
+    color: var(--prymary-cyan);
+    margin-bottom: var(--blocks-margin);
+}
+
+.grid-container__join--subtitle {
+    color: var(--primary-bright-yellow);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--blocks-margin);
+}
+
+.grid-container__join--description {
+    color: var(--grayish-blue);
+}
+
+/*Grid-Container-Subscription*/
+
+.grid-container__subscription {
+    background-color: var(--prymary-cyan);
+    color: var(--white);
+}
+
+.grid-container__subscription--title {
+    margin-bottom: var(--blocks-margin);
+}
+
+.grid-container__subscription--price {
+    color: var(--very-light-gray);
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.grid-container__subscription--price span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    vertical-align: middle;
+}
+
+.grid-container__subscription--description {
+    margin-bottom: var(--blocks-margin);
+}
+
+.signup-btn {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-bright-yellow);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    font-size: var(--font-size);
+    box-shadow: 0 0 15px #219690;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.signup-btn:hover {
+    background-color: var(--primary-lighten-yellow);
+    transition: .5s;
+}
+
+/*Grid-Container-Why*/
+
+.grid-container__why {
+    background-color: var(--primary-cyan-lighten);
+    border-radius: 0 0 8px 8px;
+    color: #c6e6e9;
+}
+
+.grid-container__why--title {
+    margin-bottom: var(--blocks-margin);
+    color: var(--white);
+}
+
+
+
+
+
+

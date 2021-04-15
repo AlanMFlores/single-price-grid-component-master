@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    vertical-align: middle;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 1fr;
+    max-width: 630px;
+    text-align: left;
+    border-radius: 8px;
+
+}
+
+.grid-container__join {
+    grid-column: 1 / 3;
+}
+
+.grid-container__subscription {
+    border-radius: 0 0 0 8px;
+}
+
+.grid-container__why {
+    border-radius: 0 0 8px 0;
+}
